@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'homepage/home.dart';
+import 'package:mobile/navbar/navbar.dart';
 
 void main() {
   runApp(const NaraApp());
@@ -18,7 +18,7 @@ class NaraApp extends StatelessWidget {
         colorSchemeSeed: const Color(0xFF2F5233),
         scaffoldBackgroundColor: const Color(0xFFFBF9F4),
       ),
-      home: const HomeScreen(),
+      home: const MainNavigation(),
     );
   }
 }
