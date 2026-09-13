@@ -77,7 +77,15 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Nara')),
+      appBar: AppBar(
+        title: Text(
+          'Nara',
+          style: TextStyle(
+          color: Colors.white, 
+          ),
+          ),
+        backgroundColor: Colors.brown,
+        ),
       floatingActionButton: FloatingActionButton(
         onPressed: _handleAddArticle,
         child: const Icon(Icons.add),
