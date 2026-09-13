@@ -32,13 +32,7 @@ class _MainNavigationState extends State<MainNavigation> {
       ),
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
-          color: Colors.white,
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withOpacity(0.05),
-              blurRadius: 10,
-            ),
-          ],
+          color: Colors.brown,
         ),
         child: SafeArea(
           child: Padding(
@@ -50,22 +44,28 @@ class _MainNavigationState extends State<MainNavigation> {
                 SalomonBottomBarItem(
                   icon: const Icon(Icons.home),
                   title: const Text('Home'),
-                  selectedColor: const Color(0xFF2F5233),
+                  selectedColor: Colors.white,
+                  unselectedColor : Colors.white
                 ),
                 SalomonBottomBarItem(
                   icon: const Icon(Icons.search),
                   title: const Text('Cari'),
-                  selectedColor: const Color(0xFFD98E4A),
+                  selectedColor:  Colors.white,
+                  unselectedColor: Colors.white
                 ),
                 SalomonBottomBarItem(
                   icon: const Icon(Icons.bookmark),
                   title: const Text('Simpan'),
-                  selectedColor: const Color(0xFF2F5233),
+                  selectedColor: Colors.white,
+                   unselectedColor: Colors.white
+
                 ),
                 SalomonBottomBarItem(
                   icon: const Icon(Icons.person),
                   title: const Text('Profil'),
-                  selectedColor: const Color(0xFFD98E4A),
+                  selectedColor: Colors.white,
+                  unselectedColor: Colors.white
+
                 ),
               ],
             ),
